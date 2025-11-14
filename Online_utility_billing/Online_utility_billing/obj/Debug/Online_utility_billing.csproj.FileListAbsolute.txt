@@ -1,0 +1,8 @@
+C:\Dotnet_Training\CSharp\Day-1\Online_utility_billing\Online_utility_billing\bin\Debug\Online_utility_billing.exe.config
+C:\Dotnet_Training\CSharp\Day-1\Online_utility_billing\Online_utility_billing\bin\Debug\Online_utility_billing.exe
+C:\Dotnet_Training\CSharp\Day-1\Online_utility_billing\Online_utility_billing\bin\Debug\Online_utility_billing.pdb
+C:\Dotnet_Training\CSharp\Day-1\Online_utility_billing\Online_utility_billing\obj\Debug\Online_utility_billing.csproj.AssemblyReference.cache
+C:\Dotnet_Training\CSharp\Day-1\Online_utility_billing\Online_utility_billing\obj\Debug\Online_utility_billing.csproj.CoreCompileInputs.cache
+C:\Dotnet_Training\CSharp\Day-1\Online_utility_billing\Online_utility_billing\obj\Debug\Online_utility_billing.exe
+C:\Dotnet_Training\CSharp\Day-1\Online_utility_billing\Online_utility_billing\obj\Debug\Online_utility_billing.pdb
+C:\Dotnet_Training\CSharp\Day-1\Online_utility_billing\Online_utility_billing\obj\Debug\Online_utility_billing.exe.config
