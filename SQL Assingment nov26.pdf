@@ -1,0 +1,144 @@
+SQL Server Queries Assignments
+
+1. Display the list of customers who resides in Bangalore
+
+    select * from Customers where Caddress='Bangalore'
+
+
+2. Display the list of customers who does not resides in Bangalore or
+Chennai
+
+    select * from Customers where Caddress <>'Bangalore'
+
+3. Display the list of customers who’s age is greater then 50 and does not
+resides in Bangalore
+
+   select * from Customers where age>25 and Caddress <> 'Bnagalore'
+
+4. Display the list of customers who’s name starts with A
+    select * from Customers where Custname like 'A%'
+
+
+5. Display the list of customers who’s name contains a word Br
+
+     select * from customers where custname like '%Br%';
+
+
+6. Display the list of customer who’s name start between a to k
+
+    select * from customers where custname like '[A-K]%';
+
+7. Display the list of customers who’s name is 5 character long
+
+    select * from customers where len(custname) = 5;
+
+8. Display the list of customer who’s name
+    a. Start with s
+    b. Third character is c
+    c. Ends with e
+
+   select * from Customers where CustName like 'S_c%e';
+
+9. Display unique customer names from customers table
+
+   select distinct custname from customers;
+
+
+10.List orders details where qty falling in the range 100-200 and 700-1200
+
+   select * from orders where quantity between 100 and 200 or quantity between 700 and 1200;
+
+11. List customer details where custname beginning with AL and ending
+with N
+
+   select * from customers where custname like 'AL%N';
+
+
+ 
+12.Display what each price would be if a 20% price increase were to take
+place. Show the custid , old price and new price ,using meaningful
+headings(use orders table)
+
+   select customers_id as custid, price as old_price, price * 1.2 as new_price from orders;
+
+
+13.Display top 3 highest qty from orders table
+
+   select top 3 * from orders order by quantity desc;
+
+14.Display how many times customers have purchased a product (display
+count and customerid from orders table)
+
+   select customers_id, count(*) as purchase_count from orders group by customers_id;
+
+
+15.Display the list of orders who’s orders made earlier then 5 years from
+now
+
+   select * from orders where order_date < dateadd(year, -5, getdate());
+
+
+16. Select * from customers where custname is null
+
+   select * from customers where custname is null;
+
+17. Display orderdetails in following format
+     OrderID-Date     Total(price*qty)
+      100-1/1/2000        500
+
+
+  select order_id as OrderID, order_date as Date, price*quantity as Total from orders;
+
+
+18. Update orders table by decreasing price by 20% for qty > 50
+
+     update orders set price = price * 0.8 where quantity > 5;
+    select * from Orders
+
+19.You want to retrieve data for all the orders who made order '1-12-90'
+having price 4000 – 6000 and sort the column in descending order on
+price
+
+   select * from orders where order_date = '1990-12-01' and price between 4000 and 6000 order by price desc;
+
+
+
+ 
+20.Display order details in following format
+Custid    Price (sum of price)   Count (count of qty)
+1         5000                    3
+2         4000                    9
+3         6700                    6
+
+
+    select customers_id as custid, sum(price) as Price, count(quantity) as Count from orders group by customers_id;
+
+
+
+21.Display above details only for price > 4000
+
+    select customers_id as custid, sum(price) as Price, count(quantity) as Count from orders group by customers_id having sum(price) > 4000;
+
+22.Write a query to create duplicate table of customer , and name it as
+custhistory
+a. Delete all the records of custhistory
+b. Copy records of customers to custhistory where age > 30
+
+
+insert into customers (customers_id, custname, age, caddress, cphone) values
+(9, 'Rajesh', 35, 'Chennai', '9876543210'),
+(10, 'Anitha', 40, 'Mumbai', '9123456780'),
+(11, 'Vikram', 32, 'Delhi', '9988776655');
+
+select * from Customers
+
+--(a)
+ select * into custhistory from customers
+ select * from custhistory;
+ --(b)
+ delete from custhistory;
+  select * from custhistory;
+  --(c)
+  insert into custhistory select * from customers where age > 30;
+    select * from custhistory;
+ 

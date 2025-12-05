@@ -4,18 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assingment_nov25
+namespace Assignment_nov25
 {
     public interface ICustomerRepository
     {
         Customer GetCustomerById(int id);
     }
-    public class CustomerService
+    public class Customer
     {
-        private readonly ICustomerRepository repo;
-            public CustomerService(ICustomerRepository repo)
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+    internal class CustomerService
+    {
+        private readonly ICustomerRepository _repo;
+        public CustomerService(ICustomerRepository repo)
         {
-            repo = repo;
+            _repo = repo;
+        }
+
+        public string GetCustomerName(int id)
+        {
+            var customer = _repo.GetCustomerById(id);
+            return customer?.Name ?? "Unknown";
         }
     }
 }
