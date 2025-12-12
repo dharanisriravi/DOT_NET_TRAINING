@@ -1,0 +1,8 @@
+C:\Dotnet_Assignment\ADO_TEST_DEC12\ADO_TEST_DEC12\ADO_TEST_DEC12\bin\Debug\ADO_TEST_DEC12.exe.config
+C:\Dotnet_Assignment\ADO_TEST_DEC12\ADO_TEST_DEC12\ADO_TEST_DEC12\bin\Debug\ADO_TEST_DEC12.exe
+C:\Dotnet_Assignment\ADO_TEST_DEC12\ADO_TEST_DEC12\ADO_TEST_DEC12\bin\Debug\ADO_TEST_DEC12.pdb
+C:\Dotnet_Assignment\ADO_TEST_DEC12\ADO_TEST_DEC12\ADO_TEST_DEC12\obj\Debug\ADO_TEST_DEC12.csproj.AssemblyReference.cache
+C:\Dotnet_Assignment\ADO_TEST_DEC12\ADO_TEST_DEC12\ADO_TEST_DEC12\obj\Debug\ADO_TEST_DEC12.csproj.CoreCompileInputs.cache
+C:\Dotnet_Assignment\ADO_TEST_DEC12\ADO_TEST_DEC12\ADO_TEST_DEC12\obj\Debug\ADO_TEST_DEC12.exe
+C:\Dotnet_Assignment\ADO_TEST_DEC12\ADO_TEST_DEC12\ADO_TEST_DEC12\obj\Debug\ADO_TEST_DEC12.pdb
+C:\Dotnet_Assignment\ADO_TEST_DEC12\ADO_TEST_DEC12\ADO_TEST_DEC12\obj\Debug\ADO_TEST_DEC12.exe.config
