@@ -149,7 +149,6 @@ namespace ADO_TEST_DEC12
             SqlDataReader dr = cmd.ExecuteReader();
             Console.WriteLine("Course details by semester: ");
 
-            // Iterate through the data reader and display course details
             while (dr.Read())
             {
                 Console.WriteLine($"{dr[0]}\t{dr[1]}\t{dr[2]}");
