@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html >
+    <center>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task8 Input Change</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <h2>Task 8</h2>
+<h2>Input Change</h2>
+</head>
+<body>
+
+
+<input type="text" id="my-input" placeholder="Type something...">
+
+<div id="messages"></div>
+
+<script>
+$(document).ready(function() {
+    $("#my-input").on("change", function() {
+        $("#messages").append("<p>Input field has changed!</p>");
+    });
+});
+</script>
+
+</body>
+</center>
+</html>

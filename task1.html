@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <center>
+<head>
+<title> Task1 Multiply and Divide</title>
+<h2>Task1</h2>
+<h1>Multiply and Divide</h1>
+</head>
+
+<body>
+
+<div>
+    <p>
+        1st Number:
+        <input type="text" id="first">
+    </p>
+
+    <p>
+        2nd Number:
+        <input type="text" id="second">
+    </p>
+
+    <p>
+        <button onclick="mul()">Multiply</button>
+        <button onclick="div()">Divide</button>
+    </p>
+
+    <p>
+        Result is:
+        <span id="ans"></span>
+    </p>
+</div>
+
+<script>
+function mul() {
+    var x = document.getElementById("first").value;
+    var y = document.getElementById("second").value;
+    document.getElementById("ans").innerHTML = x * y;
+}
+
+function div() {
+    var x = document.getElementById("first").value;
+    var y = document.getElementById("second").value;
+    document.getElementById("ans").innerHTML = x / y;
+}
+</script>
+
+</body>
+</center>
+</html>

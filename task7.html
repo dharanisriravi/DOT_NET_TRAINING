@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Task7 Add Index</title>
+<h2>Task7</h2>
+<h2>Add Index</h2>
+</head>
+<body>
+
+<ul>
+    <li>CSHARP</li>
+    <li>SQL</li>
+    <li>ADO</li>
+</ul>
+
+<button id="addIndexBtn">Add Index</button>
+
+<script>
+$(document).ready(function(){
+    $("#addIndexBtn").click(function(){
+        $("li").each(function(index){
+            if(!$(this).data("indexed")){
+                $(this).prepend(index + " "); 
+                $(this).data("indexed", true); 
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>

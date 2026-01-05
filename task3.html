@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html >
+    <center>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3 click Button</title>
+    <h2>Task3</h2>
+<h2>Click Button</h2>
+</head>
+<body>
+
+<button id="button">Click the Button</button>
+
+<script>
+const button = document.getElementById("button");
+
+button.addEventListener("click", () => {
+    console.log("Button clicked");
+    button.textContent = "Button clicked!";
+});
+</script>
+
+</body>
+</center>
+</html>

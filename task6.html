@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<title>Task6 Selected List</title>
+<h2>Task6</h2>
+<h2>Selected List</h2>
+</head>
+<body>
+
+<ul>
+    <li>CSHARP</li>
+    <li>SQL</li>
+    <li>ADO</li>
+</ul>
+
+<p>Selected Item: <span id="selected"></span></p>
+
+<script>
+$(document).ready(function(){
+    var item = $("li").eq(2).text();
+    $("#selected").text(item);
+});
+</script>
+
+</body>
+</html>
